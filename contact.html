@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head> <!-- displays on the tab -->
+  <meta charset="utf-8">
+  <title>Ryan Lopez</title>
+  <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
+  <link rel="noramlize css"  type="text/css" href="CSS/noramlize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="CSS/styles.production.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Optimizes for mobile browsers -->
+</head>
+
+<body>
+  <header class="page-header">
+    <!-- Insert logo here -->
+    <img src="img/Logo.png" alt="" class="page-header__item-logo page-header__item">
+    <nav class="page-header__item">
+      <ul role="menubar" class="navigation-list"><!-- Ul = Unordered list (bullet points), ol =ordered list (1,2,3)-->
+        <li role="presentation"><!-- refers to list items, each one needs its own li -->
+          <a  href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>  <!-- Href are hyperlinks -->
+        </li>
+        <li role="presentation">
+          <a  href="about.html" role="menuitem" class="navigation-list__item">About Me</a><!-- Block Element Modifier(BEM) will be used to style classes-->
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+        <li role="presentation">
+          <a  href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Contact<h1>
+
+      <div> <!-- mailto brings up the default email of the computer, Tel: brings up default calling-->
+        510 West 45th Street<br>
+        New York, NY <br>
+        10036<br>
+        <br>
+        Tel: <a href="tel: 6468986294">(646)898-6294<br>
+          <a href="mailto:ryan.Lopez@stern.nyu.edu">Ryan.Lopez@stern.nyu.edu</a><br>
+          <a href="mailto:ryan.lopez@stern.nyu.edu">Contact me</a>
+        </div>
+      </main>
+      <footer>
+        <form action="" method="post" id="contact-form"> <!-- All forms must begin with this--><!-- there is only 1 contact form on the site thus we use an ID -->
+          <label class="standard-label"for="contact-email"> E-mail: </label><!-- classes are shelves because they can group multiple tags, IDs are unique and can only be used for 1 element-->
+          <input type="email" id="contact-email" required><!-- The required attribute doesn't require a value when it's included within a tag -->
+
+          <label class="standard-label" for="contact-tel">Telephone: </label>
+          <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><!-- Only numbers following ###-###-#### can be inputted-->
+
+          <Label class="standard-label" for="contact-Message">Message:</label>
+          <textarea maxlength="240" id="contact-Message" required></textarea> <!-- maxlength referes to characters in message-->
+          <input  type="submit" value="Get In Touch">
+          </form>
+        </footer>
+      <script src="js/tota11y.min.js"></script><!-- script tags...--><!-- tests how accessible your webpage is -->
+      </body>
+
+      </html>
