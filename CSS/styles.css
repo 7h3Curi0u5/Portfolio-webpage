@@ -111,10 +111,6 @@ button:hover, button:focus, .button:hover, .button:focus {
   opacity: 0.8;
 }
 
-.button_secondary {
-  background-color: #e0b354;
-  color: #2b2b2b;
-}
 
 .navigation-list__item--active { /* Block Element Modifier used on the navigation */
   text-decoration: none;
